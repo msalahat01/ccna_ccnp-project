@@ -1,0 +1,16 @@
+must write in all router 
+in (config)
+no ip domain-lookup
+username ----- password ------
+line console 0 
+login local
+logging synchronous 
+exit
+line vty 0 15 
+login local
+exit
+line aux 0
+logging synchronous 
+login local
+exit
+enable secret -----
